@@ -1,0 +1,16 @@
+name: ${project.artifactId}
+version: ${project.version}
+author: Harbo5
+main: com.harbo.factionscore.Main
+depend: [Vault, Factions]
+softdepend: [HolographicDisplays]
+load: POSTWORLD
+permissions:
+  powercore.admin:
+    description: Allows user to administrate the core and its charges
+commands:
+  powercore:
+    description: PowerCore control.
+    aliases: pwc
+  charges:
+    description: Add or remove charges from el core.

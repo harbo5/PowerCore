@@ -1,0 +1,43 @@
+#Postion for the center of the sphere
+worldName: world
+x-pos: 0
+y-pos: 128
+z-pos: 0
+radius: 8 #Radius, in blocks, of the particle sphere.
+
+amountOfCharges: 100 #The total amount of charges
+junkValue: 1.0 #Charge value of any undefined item.
+junkPay: 1.0 #The amount of money given when a player donates an undefined item
+
+#The amount of charges a given item adds to the core when donated. Items not specifically defined here will use the junkValue.
+#The last value is the amount of money received by donating that item. Default is set in junkPay.
+#itemId:damageValue:charges:money
+itemValues:
+  - "322:1:1:1"
+  - "1:2:5:1"
+costPerCharge: 1.0 #economic cost for one charge
+xpPerCharge: 1 #Levels of XP required for one charge
+eventCharges: 25.0 #The amount of charges it takes to trigger an event, i.e. 25 would trigger an event at 25, 50, and 75. The ultimate event is triggered at the max charge regardless of this value.
+commandEventCommand: eco give <player> 100 #The command to be run in the event of a charge event where a command is run on every player. Use <player> to substitute a username.
+itemEventCommand: eco give <player> 100 #The command to be run in the event of am item event
+
+giantCommand: eco give <player> 1000 #The command to be run when a player kills the giant problem event. Use <player> to substitute a username.
+
+horseCommand: eco give <player> 100000 #The command to be run when a player kills the diamond horse. Use <player> to substitute a username.
+
+#World Bounds (Used for spawning random things for events)
+xMin: -5000
+zMin: -5000
+xMax: 5000
+zMax: 5000
+
+#Odds of a given event
+giantEventChance:
+supplyDropEventChance:
+potionBuffEventChance:
+mcmmoEventChance:
+itemEventChance:
+commandEventChance:
+factionsFlyChance:
+
+chargeValue: 0
